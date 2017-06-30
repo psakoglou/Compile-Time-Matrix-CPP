@@ -1,5 +1,5 @@
 /*
-*	© Superharmonic Technologies
+*	Â© Superharmonic Technologies
 *	Pavlos Sakoglou
 *
 *  ===================================================
@@ -30,24 +30,24 @@ public:
 	// Operator overloading
 
 	// Modifying operators
-	T operator()(int i, int j);									// Access and modify
-	Matrix & operator+=(const Matrix & matrix);					// Matrix Addition
-	Matrix & operator-=(const Matrix & matrix);					// Matrix Subtraction
-	Matrix & operator*=(const T scalar);						// Scalar Multiplication
-	Matrix & operator+=(const T scalar);						// Scalar Addition
-	Matrix & operator-=(const T scalar);						// Scalar Subtraction	
-	Matrix & operator/=(const T scalar);						// Scalar Division
-	Matrix & operator=(const Matrix & matrix);					// Assignment operator
+	T operator()(int i, int j);				// Access and modify
+	Matrix & operator+=(const Matrix & matrix);		// Matrix Addition
+	Matrix & operator-=(const Matrix & matrix);		// Matrix Subtraction
+	Matrix & operator*=(const T scalar);			// Scalar Multiplication
+	Matrix & operator+=(const T scalar);			// Scalar Addition
+	Matrix & operator-=(const T scalar);			// Scalar Subtraction	
+	Matrix & operator/=(const T scalar);			// Scalar Division
+	Matrix & operator=(const Matrix & matrix);		// Assignment operator
 
 	// Non-modifying operators
-	const T operator()(int i, int j)					const;			// Get an element	
-	Matrix operator+(const Matrix & matrix)				const;			// Matrix Addition	
-	Matrix operator-(const Matrix & matrix)				const;			// Matrix Subtraction
-	Matrix operator*(const Matrix<T, NC, NR> & matrix)	const;			// Matrix Multiplication 
-	Matrix operator*(const T scalar)					const;			// Scalar Multiplication	
-	Matrix operator+(const T scalar)					const;			// Scalar Addition	
-	Matrix operator-(const T scalar)					const;			// Scalar Subtraction	
-	Matrix operator/(const T scalar)					const;			// Scalar Division
+	const T operator()(int i, int j)			const;		// Get an element	
+	Matrix operator+(const Matrix & matrix)			const;		// Matrix Addition	
+	Matrix operator-(const Matrix & matrix)			const;		// Matrix Subtraction
+	Matrix operator*(const Matrix<T, NC, NR> & matrix)	const;		// Matrix Multiplication 
+	Matrix operator*(const T scalar)			const;		// Scalar Multiplication	
+	Matrix operator+(const T scalar)			const;		// Scalar Addition	
+	Matrix operator-(const T scalar)			const;		// Scalar Subtraction	
+	Matrix operator/(const T scalar)			const;		// Scalar Division
 
 	// Utilities
 
@@ -56,10 +56,10 @@ public:
 
 	// Elementary Algorithms
 
-	Matrix &				makeIdentity();									// Identity Matrix
-	Matrix					transpose();									// Transpose 
-	Matrix &				randomize(T start_range, T end_range);			// Randomize 			
-	T						trace()							const;			// Trace of a square matrix
+	Matrix &	makeIdentity();					// Identity Matrix
+	Matrix		transpose();					// Transpose 
+	Matrix &	randomize(T start_range, T end_range);		// Randomize 			
+	T		trace()				const;		// Trace of a square matrix
 
 private:
 	// 2D dynamic array
